@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aribnb</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assest/style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <nav class="container_icon" >
+                <div class="logo">
+                <a href="#" ><i class='bx bxl-airbnb'></i>aribnb</a>
+                </div>
+              
+                <ul class="nav-items">
+                    <li class="nav-link_active"><a id="acoler1" href="#"><strong> Stays </strong></a></li>
+                    <li class="nav-link"><a id="acoler" href="#">Experiences</a></li>
+                </ul> 
+                <div class="ans">
+                <a href="#" id="acoler2"  ><strong> Airbnb your home </strong></a>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABGJJREFUWEftmHXoZUUUxz+7tlgrKiYGWFgYKAYGJiirrmC3iGJhISoqthio2LoGrv2PmNhigIGKLRYGFhYYINjO58cZON7fu/e+t+4fi+wXHtyZOXPmzOl5E5jJMGEmk4f/jUCbAHsAGwCLxk9lfwt8A7wI3AY8P6oFRtHQ3MChwNHAskMe9BFwCTAV+HWYPcMKdCBwPrDIMEwH0Ki1Y4Db+/YPI5CCnNDB6FNgVeBP4HVglQ7aU4Gzu4TqEsi1m4D9EgNvekNR/0lpblPg2RivCbxSDp09xvcCk+FfwXM5cFSbUF0CufGItPGOGF8K7BPzOu7eDeZeYv+YuzIudTOwWqI7o3yfPkioNoG098Vpg2Y7EZgEfA3MEWtrAW80GK9YIvC90MpPwBLAX8B9wNaJ1kvd2hRqkEALAp8B8wexN/FG4gDgxvh+AtiqRfX3AzvEmpF5bVzi7jT/JbA88FvmMUigM4uD6nzi8cat8kGaU5MMwm7Fue+MhbeB1ePb1GEQLBbjw8v3VV0CzRkmWSiINgOeSRu+BxaOsab5sEUgDzZJzhfrSwFqRCjEFfGtcMt1CbQ98EAQfAEsnYhVr4lOyNxDuqB2twwCfcex8NL6WBVkHeDVyqhpMv1DPxFGiwmxYrtSKh6KgWFuuHdBcx4WBIa5UVtxbkod5qXqIuOKq4nNXCKaUWAoK6Qw4+7VI9CRxbyXBc3VSTindi7n6ODi0VLztq28mhrSTEvGos6mH1RsCGwTgxeAR3oEWhnYPWg+aJQNS5C+JN7JOaop0C+lZs3Tc9CMXv4RqEE0zmQ/p8iY0Qe38fPMBdpMpvevFIs65XeJy3qAUSheBh4cwWTvA5aeCnuo6vDvRnEeW2ua7CnA3CNswGpyc7xr2XhXrN0TjtklkwfWxHk9cHAilndtRZ5M6WGcQBcCx8fGZmTYJdaq/hqwdo+GbMxs5sRpwFmJ/hrgkBifV8rHyW0mM5Kei8W3gDUSk8ULk69ibNG05nXh4RTOu6Qwd4+RZQ8ldAVbljE0Teb48xT6mwNPp1Ot9LUOKaxCD4Kl4wdgrlhcJvg63KIkVc0kPgZWyAwGFVdNpumEDmei/D3GlpXq2F3FNZcgL6hAwrblzeLg5ijRW1wlmrc0WJ+kl8S0aLj+jiZf3xJ2gzu1aMg9tYmzrzourHFLyvAmYbXT2354hhFxXTrM6mwpsKB64wpThFk4Q21oitlicv2i1Zci4mqou7RnIxWMkXe1sM3m/rGIjItKlzglDrM1re1qFSq3vpYYeyOfQbXsSHdKMd85g7Tb9+owfxyUNqpeK/6OaW6j9CBcN7RR+VrvzGs6eYXp4NgWUw/1lDZ/eKM2mN3tCCcWnzI/1XBu0uuDPqfUcCv6NFQ3ahYjb3ofijqwPVFtOf6zQDJQ7Tq7ETPsU1rtXVCiyaj7o0szdW1YDWVe7tm4tLP7lqeN7Wf9s0GT2D+Zzf2TwVplER4J0yPQSAeMSjxLoD6N/QOrWMol5WmpXwAAAABJRU5ErkJggg=="/>      
+                 
+                <div class="bo_ce" > 
+                    <ul id="menu">
+
+                    <li>  <a href="#">              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAH1JREFUWEft1UEKwCAMBVG9eW9ecdeFONQgJDDdhkj6/Gpvyb6ebJ7mQLQjCilEAlQvlaGX/iZYX2LshBxoipfKUDAiZ+0KkdtO6KHmYH25vsf+o/r7Yky3ZcGInLV77MmtlJCvPb326YQof1fqpUJ9RYAWVUghEqC6GSKhAeG2CiXgqE5rAAAAAElFTkSuQmCC"/>  
+                    
+                                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAiJJREFUWEft1j/IjWEYx/HP608GZFGIMCoTQmIwSDJYRAZJJtlEEQPK3zfJggySDAZioGTCQAYSUf6UwYBVERF5Lj3Hv845930/r/f0Jnc907mu6/c9v+d+fvfdZ4itviHG458CGostWIA5tdN3cQuH8aGJ+00dWoRzmNJB9AVW414pVBOghbiOkQmxcGgeHpVAlQKNwXNMzBR5ipn4kllfvKk34FTu8LpuOa7m9pQ6dAbrcofXdYewPbenFOgaluYOr+suY0VuTynQBazMHV7Xna+/uKy2UqCw/kDW5J9FkVVHcntKgaZWeygyZnimwGdMw+vM+uKvLOYew6ZMgf4qsbdl1n4vK3UoekbhCpYkhC5hVUkGNQWKvmHYir1tEvtd/dvJEmdatU0c+lVnNGZhNj7hPh5UufOxCcxAHGqql+wbqENJgdKCJkAz6gMzImBcB8G3eFlt6sd4UgKVCxSXsZ1YjwklAnUGncZ+vE/15gAtw1mMTw1L/P6mcmsNbnarSwFtxPGGedVO9yvW1rfNtlzdgOZWJ/vtKmtGDNCZP9sjEmJ225tkJ6C4nj7D9L8M0xr3sM6vcOy31Qkozp+DgwTTGhu3z9jsWUCvMGmQgSLVI+GTQPNxZ5BhWuMnI/78j9XulcWXdaJHQHH7vJgC2lGd4Pt6BLQZR1NAu7GrR0B7Kp3Q6/rKFiOeXqwblVY8XYF6AdJRI3V09BzuP1DK8m9Xs0gl5Tm5qgAAAABJRU5ErkJggg=="/>
+                                    </a>
+                                     <ul>
+                                        <li><a href="#">Java</a></li>
+                                        <li><a href="#">PHP</a></li>
+                                        <li><a href="#">Python</a></li>
+                                    </ul>
+                                    
+                                    </li>
+
+                </ul>
+                </div>
+
+                
+                </div>
+            </div>
+            </div>
+        </nav>
+ 
+            <div class="btn">
+                <div class="bolder">
+              <a class="btn1" href="#" id="coler" id="acoler" >where</a>
+              <a class="btn1" href="#" id="coler" id="acoler" ><span>check in </span></a>
+              <a class="btn1" href="#" id="coler" id="acoler" >check out </a>              
+              <a class="btn1" href="#" id="coler" id="acoler" >who</a>  
+              <i id="icon" class='bx bx-search-alt-2'></i>            
+
+                 
+            </div>
+           
+            </div>
+        </div>
+    </header>
+    <hr>
+
+
+    <div>
+        <ul class="icon_img">
+            <li class="icon_active"><img src="img/image07.png"> Icons</li>
+            <li><img src="img/image08.jpg" alt="Rooms"> Rooms</li>
+            <li><img src="img/image10.jpg" alt="Amazing views"> Amazing views</li>
+            <li><img src="img/image11.jpg" alt="Amazing pools"> Amazing pools</li>
+            <li><img src="img/image12.jpg" alt=""> Domes</li>
+            <li><img src="img/image13.jpg" alt=""> Bed & breakfasts</li>
+            <li><img src="img/image14.jpg" alt=""> Cabins</li>
+            <li><img src="img/image15.jpg" alt=""> Ski-in/out</li>
+            <li><img src="img/image16.jpg" alt=""> OMG!</li>
+        </ul>
+        
+    </div>
+
+
+    <main>
+        
+        <div class="carde" >
+            <div class="image">
+               
+            <img src="img/image69.png" alt="" width="100%">
+            <a href="download_link_here" class="download-icon" download>
+                &#8681; <!-- يمكنك استخدام أيقونة التنزيل هنا -->
+            </a>
+            
+            <p>Stay in Prince's Purple Rain house
+                Hosted by Wendy and Lisa
+                Coming September</p>
+        </div>
+        </div>
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image70.png" alt="" width="100%" height="180px">
+            <p>Join a living room session with Doja
+                Hosted by Doja Cat
+                Coming October</p>
+        </div>
+        </div>
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image71.png" alt="" width="100%">
+            <p>Sleepover at Polly Pocket's Compact
+                Hosted by Polly Pocket
+                Sold out</p>
+        </div>
+        </div>
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image72.png" alt="" width="100%">
+            <p>Playdate at Polly Pocket's Compact
+                Hosted by Polly Pocket
+                Sold out</p>
+
+        </div>
+        </div>
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image73.jpeg" alt="" width="100%">
+            <p>Go VIP with Kevin Hart<br>Hosted by Kevin Hart<br>Sold out
+            </p>
+        </div>
+        </div>
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image74.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+    </main>
+    <h2 style="padding-top: 20px;">your baske experans</h2>
+    <main>
+        
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image75.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image76.jpeg" alt="" width="100%" height="180px">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image77.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image78.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image79.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image80.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image81.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image82.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image83.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image84.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image85.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image86.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image87.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image89.jpeg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+        <div class="carde" >
+            <div class="image">
+            <img src="img/image90.jpg" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+
+
+        <div class="carde"  >
+            <div class="image">
+            <img src="img/image69.png" alt="" width="100%">
+            <p>Train at the X-Mansion
+                Hosted by Jubilee
+                Sold out</p>
+        </div>
+        </div>
+
+        
+
+    </main>
+
+
+    <section class="footer">
+        <div class="footer_container container">
+            <div class="footer_section">
+                <h3>Inspiration for future getaways</h3>
+                <ul>
+                    <li>Popular</li>
+                    <li>Arts & Culture</li>
+                    <li>Outdoors</li>
+                    <li>Mountains</li>
+                    <li>Beach</li>
+                    <li>Unique Stays</li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Things to Do</li>
+                    <li>Travel Tips & Inspiration</li>
+                    <li>Airbnb-Friendly Apartments</li>
+                    <li>Canmore</li>
+                    <li>Pet-Friendly Rentals</li>
+                    <li>Benalmádena</li>
+                    <li>House Rentals</li>
+                    <li>Marbella</li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h3>Support</h3>
+                <ul>
+                    <li>Help Center</li>
+                    <li>AirCover</li>
+                    <li>Anti-Discrimination</li>
+                    <li>Disability Support</li>
+                    <li>Cancellation Options</li>
+                    <li>Report Neighborhood Concern</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_info">
+            <p>&#169; 2024 Airbnb, Inc. All Rights Reserved.</p>
+            <p>Terms | Sitemap | Privacy | Your Privacy Choices</p>
+            <div class="social_links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+</body>
+</html>

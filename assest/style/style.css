@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+.container{
+    padding:20;
+}
+
+
+
+.root{
+    --icon:#FF5A5F;
+
+}
+.container_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+
+}
+
+.custom{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+
+.logo a{
+
+    display: flex;
+    text-decoration: none;
+    color: #FF385C;
+    font-weight: 700;
+    font-size: 25px;
+    width: 120px;
+    height: 90px;
+    padding-top: 20%;
+    text-decoration: none !important;
+    
+   
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+    line-height: 16px;
+    column-gap: 3px;
+}
+
+
+#acoler{
+    color:#838383;
+}
+#acoler1{
+    color:black;
+}
+#acoler2{
+    color:black;
+    border-radius: 25;
+}
+#acoler2:hover{
+    padding: 10px;
+    border-radius: 20px ;
+    background-color: rgb(223, 223, 223);
+}
+.ans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: rgb(158, 158, 167);
+    font-size: 16px;
+    line-height: 16px;
+    list-style: none;
+    column-gap: 40px;
+}
+
+.bo_ce{
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: 5px;
+    box-shadow: 0 2px 4px #1b1a1a1a;
+
+
+}
+a{
+    text-decoration: none ;
+}
+.nav-link{
+    color: #484848;;
+    text-decoration: none;
+    padding: 10px 2px;
+    border-radius: 24px;
+    transition: 0.3s ease;
+}
+.nav-link_active{
+    padding-right:30px ;
+    padding: 10px ;
+    color:#484848;
+    border-radius: 25px;
+}
+.nav-link_active:hover{
+    border-radius: 20px ;
+    background-color: rgb(223, 223, 223);
+
+}
+
+.nav-link:hover{
+    border-radius: 20px ;
+   background-color: rgb(223, 223, 223);
+}
+
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+   
+}
+#icon{
+    background-color: #FF385C;
+    border-radius: 30px;
+    padding: 17.5px;
+
+}
+.bolder
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 30px;
+    padding: 5px;
+    width: 100%;
+    margin: 20px;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+    
+}
+.btn1 {
+    font-size: 16px; /* تكبير حجم الخط */
+    color: #484848;
+    box-shadow: 3px 3px #fff;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 15px;  /* إضافة padding عمودي لتكبير الزر */
+    padding-bottom: 25px; 
+    border-right: 1px solid rgb(223, 223, 223);
+    border-radius: 50px; 
+    border-right:1px solid rgb(211, 115, 115);
+
+
+}
+
+#coler:hover {
+    background-color: #f9f4f4;
+    border-radius: 90px;
+}
+
+
+    
+.icon_img {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* توزيع العناصر على 5 أعمدة */
+    gap: 20px; /* مسافة بين العناصر */
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.icon_img li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* مسافة بين الصورة والنص */
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* إضافة تأثير أثناء التمرير */
+}
+
+.icon_img img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover; /* لضبط حجم الصورة مع الحفاظ على تناسبها */
+    border-radius: 50%; /* جعل الصور دائرية */
+}
+
+.icon_active {
+    border-bottom: 3px solid #888;
+    padding-bottom: 5px;
+}
+
+.icon_img li:hover {
+    background-color: #f9f4f4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    
+
+  main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        
+    }
+
+.carde{
+border: 0px solid black;
+padding: 2px;
+margin: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+    }
+
+    p{
+        font-family: "Roboto Serif", serif; 
+       /* font-family: "Montserrat", sans-serif; */  }
+
+
+
+
+    .image-container {
+        position: relative; /* لكي يتمكن العنصر الداخلي من استخدام position: absolute */
+        display: inline-block; /* لتكون الصورة وأيقونة التنزيل في نفس الكتلة */
+    }
+    
+    .image-container img {
+        width: 100px; /* حدد حجم الصورة حسب رغبتك */
+        height: 100px;
+        border-radius: 50%; /* لجعل الصورة دائرية */
+        object-fit: cover; /* لضمان أن الصورة تناسب إطارها */
+    }
+    
+    .download-icon {
+        position: absolute;
+        bottom: 10px; /* تعديل موضع الأيقونة أسفل الصورة */
+        right: 10px; /* تعديل المسافة من اليمين */
+        background-color: #fff; /* خلفية بيضاء للأيقونة */
+        border-radius: 50%; /* لجعل الأيقونة دائرية */
+        padding: 10px; /* حجم الأيقونة */
+        font-size: 16px; /* حجم الرمز */
+        color: #000; /* لون الرمز */
+        text-align: center;
+        text-decoration: none; /* لإزالة الخط السفلي */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* تأثير الظل حول الأيقونة */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* تأثيرات التحويل والتغيير عند التمرير */
+    }
+    
+    .download-icon:hover {
+        background-color: #888; /* لون الخلفية عند التمرير فوق الأيقونة */
+        transform: scale(1.1); /* تكبير الأيقونة قليلاً عند التمرير */
+    }
+
+    
+
+    footer {
+        background-color: #f7f7f7; /* لون الخلفية */
+        color: #333; /* لون النص */
+        text-align: center;
+        padding: 40px 0; /* تباعد عمودي */
+    }
+    
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+        gap: 30px; /* تباعد بين الأعمدة */
+        padding: 0 20px; /* تباعد جانبي */
+    }
+    
+    .footer_section h3 {
+        font-family: 'Dancing Script', cursive; /* خط العنوان */
+        font-size: 24px; /* حجم الخط */
+        margin-bottom: 15px; /* تباعد أسفل العنوان */
+    }
+    
+    .footer_section ul {
+        list-style: none; /* إزالة النقاط من القائمة */
+        padding: 0; /* إزالة الحشوة */
+    }
+    
+    .footer_section ul li {
+        margin: 10px 0; /* تباعد بين عناصر القائمة */
+        cursor: pointer; /* شكل المؤشر عند التحويم */
+        transition: color 0.3s; /* تأثير الانتقال */
+    }
+    
+    .footer_section ul li:hover {
+        color: #ff385c; /* لون النص عند التحويم */
+    }
+    
+    .footer_info {
+        margin-top: 3px; /* تباعد أعلى قسم المعلومات */
+    }
+    
+    .footer_info p {
+        margin: 5px 0; /* تباعد بين الفقرات */
+        color: #777; /* لون النص */
+    }
+    
+    .social_links {
+        margin-top: 0px; /* تباعد أعلى الروابط الاجتماعية */
+        display: flex; /* استخدام الفليكس لتوزيع الروابط */
+        justify-content: end; /* محاذاة الروابط في الوسط */
+        gap: 20px; /* تباعد بين الروابط */
+    }
+    
+    .social_links a {
+        color: #333; /* لون الأيقونات */
+        font-size: 20px; /* حجم الأيقونات */
+        transition: color 0.3s; /* تأثير الانتقال */
+    }
+    
+    .social_links a:hover {
+        color: #ff385c; /* لون الأيقونات عند التحويم */
+    }
+    
+        
+
+    #menu, #menu ul
+    {
+        list-style: none;
+        border: 0px solid #000;
+        background-color: white;
+        padding: 0 0 26px 0;
+        margin: 0;
+    }
+    #menu li
+    {
+        float: left;
+        margin-right: 1px;
+        border: 0px solid white;
+        position: relative;
+    }
+    #menu ul
+    {
+        position: absolute;
+        top: 25px;
+        left: -1px;
+        width: 200px;
+        padding: 0;
+        display: none;
+    }
+    #menu ul li
+    {
+        float: none;
+        margin: 0;
+        padding: 0;
+        line-height: 15px;
+    }
+    #menu a:link, #menu a:visited
+    {
+        display: block;
+        font-family: Tahoma;
+        font-size: 0.75em;
+        font-weight: bold;
+        text-align: left;
+        text-decoration: none;
+        color: #000;
+        padding: 5px;
+    }
+    #menu li:hover
+    {
+        background-color: white;
+        border: 1px solid #000;
+    }
+    #menu li:hover ul
+    {
+        display: block;
+    }
